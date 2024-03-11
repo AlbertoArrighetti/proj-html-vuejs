@@ -25,6 +25,9 @@ export default {
     padding: 10px;
     margin: 3px;
     border-radius: 6px;
+    cursor: pointer;
+
+    border: 0 black;
 
     img {
         max-width: 40px;
