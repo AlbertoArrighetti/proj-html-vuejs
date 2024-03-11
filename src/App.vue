@@ -2,8 +2,12 @@
 // store
 import { store } from './store';
 
+// components
+import navBar from './components/navBar.vue';
+
 export default {
   components: {
+    navBar,
 
   },
   data() {
@@ -16,9 +20,7 @@ export default {
 </script>
 
 <template>
-  <div>
-    
-  </div>
+    <navBar></navBar>
 </template>
 
 <script lang="scss">

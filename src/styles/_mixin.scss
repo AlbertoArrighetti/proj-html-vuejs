@@ -1,0 +1,14 @@
+@mixin btnStyle {
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;    
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
