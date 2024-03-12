@@ -2,11 +2,14 @@
 import {store} from '/src/store.js';
 
 import carCard from '../items/carCard.vue';
+import carCategories from '../items/carCategories.vue';
+
 export default {
     name: 'carList',
 
     components: {
         carCard,
+        carCategories,
     },
 
     data() {
@@ -21,8 +24,12 @@ export default {
 <template> 
 <div id="carList">
     <div class="container">
+        <ul class="car_categories">
+            <carCategories v-for="currentCategory in store.carType" :categoryCard="currentCategory">
+            </carCategories>
+        </ul>
         <ul class="cars">
-            <carCard v-for="(currentCar, index) in store.cars" :card="currentCar">
+            <carCard v-for="currentCar in store.cars" :card="currentCar">
             </carCard>
         </ul>
 
@@ -39,6 +46,10 @@ export default {
 
 #carList {
     margin-bottom: 20px;
+
+    .car_categories {
+        display: flex;
+    }
     
     .cars {
         width: 100%;

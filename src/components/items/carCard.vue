@@ -17,7 +17,7 @@ export default {
 </script>
 
 <template>
-    <li class="cardWrapper">
+    <li class="cardWrapper car_list_item">
         <div class="img_wrapper">
             <img :src="card.img" :alt="card.model">
         </div>
@@ -44,12 +44,15 @@ export default {
 
 .cardWrapper {
     list-style-type: none;
-    width: calc(100% / 4);
     padding: 18px;
     box-shadow: 2px 2px 4px 1px rgb(241, 241, 241);
     display: flex;
     flex-direction: column;
     gap: 12px;
+    
+    &.car_list_item {
+        width: calc(100% / 4);
+    }
 
     img {
         width: 100%;

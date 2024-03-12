@@ -78,12 +78,36 @@ export const store = reactive({
             ],
 
             carType: [
-                'Cabrio',
-                'Coupe',
-                'Hatchback',
-                'Pick Up',
-                'Sedan',
-                'SUV',
+                {
+                    src: 'cabrio',
+                    type: 'Cabrio',
+                    listing: 3,
+                },
+                {
+                    src: 'coupe',
+                    type: 'Coupe',
+                    listing: 0,
+                },
+                {
+                    src: 'hatchback',
+                    type: 'Hatchback',
+                    listing: 2,
+                },
+                {
+                    src: 'pickup',
+                    type: 'Pick Up',
+                    listing: 0,
+                },
+                {
+                    src: 'sedan',
+                    type: 'Sedan',
+                    listing: 3,
+                },
+                {
+                    src: 'suv',
+                    type: 'SUV',
+                    listing: 4,
+                },
             ],
         
 })
