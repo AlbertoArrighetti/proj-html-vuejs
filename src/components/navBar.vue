@@ -40,18 +40,18 @@ export default {
                 <img src="../assets/logo-autocar11.png" alt="Logo Autocar">
             </div>
 
-            <div class="links">
-                <a href="#" v-for="currentLink in links">{{ currentLink }}</a>
+            <div class="nav-infos">
+                <div class="links">
+                    <a href="#" v-for="currentLink in links">{{ currentLink }}</a>
+                </div>
+    
+                <btnItem :content="'My Account'" :img="'/public/img/padlock.png'"></btnItem>
+                <btnItem :content="'Add Cart'" :img="'/public/img/add.png'"></btnItem>
+    
+                <i class="fa-solid fa-bars-staggered fa-rotate-180"></i>
+    
+                <btnItem :content="telephoneNumber" :img="'/public/img/headphones.png'"></btnItem>
             </div>
-
-            <btnItem :content="'My Account'" :img="'/public/img/padlock.png'"></btnItem>
-            <btnItem :content="'Add Cart'" :img="'/public/img/add.png'"></btnItem>
-
-            <i class="fa-solid fa-bars-staggered fa-rotate-180"></i>
-
-            <btnItem :content="telephoneNumber" :img="'/public/img/headphones.png'"></btnItem>
-
-
 
         </div>
     </nav>    
@@ -64,6 +64,7 @@ export default {
 #navBar {
     .container {
         @include flexCenter;
+        justify-content: space-between;
 
         .logo {
             width: 200px;
@@ -71,6 +72,9 @@ export default {
             img {
                 width: 100%;
             }
+        }
+        .nav-infos {
+            @include flexCenter;
         }
         .links {
             display: flex;

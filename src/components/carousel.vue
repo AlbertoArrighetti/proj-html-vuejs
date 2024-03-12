@@ -42,7 +42,7 @@ import btnItem from './items/btnItem.vue';
         timer() {
             this.autoPlay = setInterval(() => {
                 this.nextSlide();
-            }, 5000)
+            }, 4500)
         },
         
         stopTimer(){
@@ -60,54 +60,34 @@ import btnItem from './items/btnItem.vue';
     <div class="carousel">
         
         <div class="slider-wrapper" tabindex="0" v-on:mouseover="stopTimer()" v-on:mouseleave="timer()">
-                <div class="item" v-for="(currentImage, index) in slides" v-show="index == activeSlideIndex">
-                    <!-- immagini -->
-                    <img 
-                        :src="currentImage.src" 
-                        :alt="'slide ' + (index + 1)" 
-                    />
-                    <!-- testo -->
-                    <div class="text">
+            <div class="item" v-for="(currentImage, index) in slides" v-show="index == activeSlideIndex">
+                <!-- immagini -->
+                <img 
+                    :src="currentImage.src" 
+                    :alt="'slide ' + (index + 1)" 
+                />
+                <!-- testo -->
+                <div class="text">
 
-                        <h1>Buy And Sell Your Car At Its Value</h1>
-                        <p>Find the right price and dealer.</p>
+                    <h1>Buy And Sell Your Car At Its Value</h1>
+                    <p>Find the right price and dealer.</p>
 
-                        <button class="btn">
-                            Learn More  <i class="fa-solid fa-arrow-right"></i>
-                        </button>
+                    <button class="btn">
+                        Learn More  <i class="fa-solid fa-arrow-right"></i>
+                    </button>
 
-                    </div>
                 </div>
-                <!-- frecce -->
-                <div class="prev-arrow arr" @click="prevSlide()">
-                    <i class="fa-solid fa-chevron-left"></i>
-                </div>
-                <div class="next-arrow arr" @click="nextSlide()">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </div>
-                
-
-
             </div>
+            <!-- frecce -->
+            <div class="prev-arrow arr" @click="prevSlide()">
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="next-arrow arr" @click="nextSlide()">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>    
         </div>
-    </template>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </div>
+</template>
 
 
 <style lang="scss">
@@ -115,6 +95,8 @@ import btnItem from './items/btnItem.vue';
 @use '/src/styles/mixin.scss' as *;
 
 .carousel {
+    margin-bottom: 40px;
+    
     .slider-wrapper {
         position: relative;
 
