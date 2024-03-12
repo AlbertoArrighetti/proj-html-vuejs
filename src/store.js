@@ -109,5 +109,29 @@ export const store = reactive({
                     listing: 4,
                 },
             ],
+
+
+            customersReview: [
+                {
+                    picture: '/src/assets/man1.png',
+                    comment: 'We are a gallery vehicle dealer. Before we met this site, our sales were sluggish.',
+                    name: 'Adam',
+                },
+                {
+                    picture: '/src/assets/testimonial2-1.png',
+                    comment: 'One of the quality websites I apply to rent a car. There are hundreds of different tools.',
+                    name: 'Cristian',
+                },
+                {
+                    picture: '/src/assets/man2.png',
+                    comment: 'I was trying to sell my car. And I put it here and sold it for more than it was worth.',
+                    name: 'Robert',
+                },
+                {
+                    picture: '/src/assets/testimonial4-1.png',
+                    comment: 'A fast and reliable vehicle selling site. Rare quality website with hundreds of model vehicles.',
+                    name: 'Elizabeth',
+                },
+            ]
         
 })
