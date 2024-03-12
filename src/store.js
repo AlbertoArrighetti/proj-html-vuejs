@@ -132,6 +132,33 @@ export const store = reactive({
                     comment: 'A fast and reliable vehicle selling site. Rare quality website with hundreds of model vehicles.',
                     name: 'Elizabeth',
                 },
+            ],
+
+            resentArticlesInfos: [
+                {
+                    img: '/src/assets/news-autocar-1-300x180.jpg',
+                    date: '06.07.2022',
+                    desc: 'BMWs have a different line with their designes and almost [...]',
+                    title: 'Why is BMW loved?',
+                },
+                {
+                    img: '/src/assets/news-autocar-2-300x180.jpg',
+                    date: '06.07.2022',
+                    desc: 'According to Euro NCAP data with different test organizations, there [...]',
+                    title: 'How solid is Audi?',
+                },
+                {
+                    img: '/src/assets/news-autocar-6-300x180.jpg',
+                    date: '06.07.2022',
+                    desc: 'Skoda is one of the leading automotive manufacters on the [...]',
+                    title: 'What brand is Skoda?',
+                },
+                {
+                    img: '/src/assets/news-autocar-5-300x180.jpg',
+                    date: '06.07.2022',
+                    desc: 'You will have a quiter vehicle that burns less than [...]',
+                    title: 'Is the Auris diesel?',
+                },
             ]
         
 })

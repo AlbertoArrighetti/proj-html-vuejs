@@ -7,6 +7,7 @@ import categories from './main/categories.vue';
 import carList from './main/carList.vue';
 import knowUs from './main/knowUs.vue';
 import review from './main/reviewMain.vue';
+import resentArticles from './main/resentArticles.vue';
 
 export default {
     name: 'mainContent',
@@ -17,6 +18,7 @@ export default {
         carList,
         knowUs,
         review,
+        resentArticles,
     },
 }
 
@@ -28,6 +30,7 @@ export default {
     <carList></carList>
     <knowUs></knowUs>
     <review></review>
+    <resentArticles></resentArticles>
 </template>
 
 <style lang="scss">

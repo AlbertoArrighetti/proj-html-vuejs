@@ -32,19 +32,19 @@ export default {
             <div class="reviews">
                 <div class="review_card" v-for="currentReview in store.customersReview">
                     <p>{{ currentReview.comment }}</p>
-
-
                     <div class="img_wrapper">
                         <img :src="currentReview.picture" alt="profile picture">
                     </div>
-
                     <span>{{ currentReview.name }}</span>
-
-
                     <div class="back_icon">
                         <i class="fa-solid fa-quote-right"></i>
                     </div>
                 </div>
+            </div>
+            
+            <div class="separator">
+                <div class="black_bar"></div>
+                <div class="grey_bar"></div>
             </div>
 
         </div>
@@ -62,12 +62,12 @@ export default {
     background-position: center;
     width: 100%;
     height: 860px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     color: #ffffff;
     text-align: center;
 
     .icon{
-        font-size: 2em;
+        font-size: 3em;
         padding-top: 86px;
         margin-bottom: 50px;
         .fa-thumbs-up {
@@ -92,6 +92,7 @@ export default {
         display: flex;
         justify-content: center;
         gap: 22px;
+        margin-bottom: 60px;
 
         .review_card {
             @include flexCenter;
@@ -99,7 +100,7 @@ export default {
             position: relative;
 
             padding: 60px 40px;
-            max-width: 300px;
+            width: calc(100% / 4);
             border-radius: 10px;
             background-color: #ffffff;
             color: $primaryColor;
@@ -119,6 +120,24 @@ export default {
                 opacity: .06;
                 transform: rotate(12deg);
             }
+        }
+    }
+
+    .separator{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        .black_bar, .grey_bar {
+            padding: 2px;
+            border-radius: 25px;
+        }
+        .black_bar {
+            background-color: #000000;
+            width: 100px;
+        }
+        .grey_bar {
+            background-color: #aaaaaa;
+            width: 50px;
         }
     }
 }
