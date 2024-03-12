@@ -1,6 +1,4 @@
 <script>
-import {store} from '../store.js';
-
 export default {
     name: 'categories',
 
@@ -37,6 +35,7 @@ export default {
 
 <style lang="scss">
 #categories {
+    margin-bottom: 26px;
     .container {
         display: flex;
         justify-content: center;
@@ -47,6 +46,7 @@ export default {
             padding: 28px 0;
             min-width: 160px;
             text-align: center;
+            cursor: pointer;
             color: #aaaaaa;
             border: 1px solid #aaaaaa;
 

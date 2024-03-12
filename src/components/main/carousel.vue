@@ -1,7 +1,4 @@
 <script>
-// items
-import btnItem from './items/btnItem.vue';
-
   export default {
 
     name: 'carousel',
@@ -91,7 +88,7 @@ import btnItem from './items/btnItem.vue';
 
 
 <style lang="scss">
-@use '../styles/variables' as *;
+@use '/src/styles/variables' as *;
 @use '/src/styles/mixin.scss' as *;
 
 .carousel {

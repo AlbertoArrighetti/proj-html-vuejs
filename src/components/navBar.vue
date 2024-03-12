@@ -83,7 +83,6 @@ export default {
             a {
                 color: $primaryColor;
                 text-decoration: none;
-                font-size: 14px;
                 font-weight: bold;
                 
                 &:last-of-type {
