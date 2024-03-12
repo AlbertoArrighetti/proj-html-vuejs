@@ -25,6 +25,12 @@ export default {
             <carCard v-for="(currentCar, index) in store.cars" :card="currentCar">
             </carCard>
         </ul>
+
+        <div class="btn_wrapper">
+            <button class="btn">
+                Show All Cars  <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
     </div>
 </div>
 </template>
@@ -32,13 +38,24 @@ export default {
 <style lang="scss">
 
 #carList {
-
+    margin-bottom: 20px;
+    
     .cars {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         gap: 20px 0;
+        margin-bottom: 12px;
     }
+    .btn_wrapper {
+        display: flex;
+        justify-content: center;
+
+        .btn {
+            padding: 24px 50px;
+        }
+    }
+        
 }
 
 

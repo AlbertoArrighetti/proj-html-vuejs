@@ -22,7 +22,7 @@ export default {
             <img :src="card.img" :alt="card.model">
         </div>
         <div class="car_brand">
-            {{ card.model }} <i class="fa-solid fa-circle-check"></i>
+            {{ card.model }} <i :class="card.avaible == true ? 'fa-solid fa-circle-check' : 'fa-solid fa-circle-xmark' "></i>
         </div>
         <div class="car_type">
             {{ card.type }}
@@ -46,10 +46,27 @@ export default {
     list-style-type: none;
     width: calc(100% / 4);
     padding: 18px;
-    box-shadow: 0px 0px 4px 1px rgb(241, 241, 241);
+    box-shadow: 2px 2px 4px 1px rgb(241, 241, 241);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 
     img {
         width: 100%;
+    }
+    .car_type {
+        font-size: 0.9em;
+    }
+    .details {
+        display: flex;
+        gap: 8px;
+        position: relative;
+
+        .like {
+            position: absolute;
+            right: 0;
+            color: #aaaaaa;
+        }
     }
 }
 </style>
