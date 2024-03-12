@@ -5,6 +5,7 @@ import {store} from '../store.js';
 import carousel from './main/carousel.vue';
 import categories from './main/categories.vue';
 import carList from './main/carList.vue';
+import knowUs from './main/knowUs.vue';
 
 export default {
     name: 'mainContent',
@@ -13,6 +14,7 @@ export default {
         carousel,
         categories,
         carList,
+        knowUs,
     },
 }
 
@@ -22,6 +24,7 @@ export default {
     <carousel></carousel>
     <categories></categories>
     <carList></carList>
+    <knowUs></knowUs>
 </template>
 
 <style lang="scss">
