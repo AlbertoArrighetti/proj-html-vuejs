@@ -27,7 +27,15 @@ export default {
     border-radius: 6px;
     cursor: pointer;
 
-    border: 0 $primaryColor;
+    border: 1px solid $primaryColor;
+
+    transition: .7s linear;
+    &:hover {
+        @include btnHoverStyle;
+        img {
+            filter: grayscale(0) invert(0); 
+        }
+    }
 
     img {
         max-width: 40px;

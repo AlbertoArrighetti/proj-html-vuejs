@@ -6,6 +6,8 @@ export default {
 
     data() {
         return {
+
+            // infos list
             aboutUsInfos: [
                 {
                     iconClass: 'fa-solid fa-car-rear',
@@ -31,19 +33,19 @@ export default {
             <div class="img_wrapper">
                 <img src="/src/assets/aoutcar-about-1.png" alt="car">
 
-                <div class="btn first">
+                <div class="banner first">
                     <div class="num">
                         24
                     </div>
-                    <div class="btn_text">
+                    <div class="banner_text">
                         Years of Experience
                     </div>
                 </div>
-                <div class="btn second">
+                <div class="banner second">
                     <div class="num">
                         240
                     </div>
-                    <div class="btn_text">
+                    <div class="banner_text">
                         Special Expert Team
                     </div>
                 </div>
@@ -94,17 +96,19 @@ export default {
             background-repeat: no-repeat;
             position: relative;
 
-            .btn {
+            .banner {
                 position: absolute;
                 width: 180px;
                 height: 180px;
+                padding-top: 10px;
                 border-radius: 50%;
                 flex-direction: column;
+                @include btnStyle;
 
                 .num {
                     font-size: 3em;
                 }
-                .btn_text {
+                .banner_text {
                     width: 100px;
                     text-align: center;
                 }

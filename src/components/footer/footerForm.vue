@@ -47,8 +47,14 @@ export default {
             width: 100%;
             background-color: $textColor;
 
+            &:hover .btnText {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+
             .btnText {
                 opacity: 0.6;
+                transition: .4s linear;
             }
         }
         button {

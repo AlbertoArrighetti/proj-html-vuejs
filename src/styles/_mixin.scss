@@ -1,3 +1,4 @@
+// btn style
 @mixin btnStyle {
     background-color: #000000;
     color: #ffffff;
@@ -6,13 +7,20 @@
     align-items: center;
     gap: 4px;
 }
+@mixin btnHoverStyle {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+}
 
+
+// display flex centered
 @mixin flexCenter {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+// position absolute centered
 @mixin posAbsoluteCenter {
     position: absolute;
     top: 50%;

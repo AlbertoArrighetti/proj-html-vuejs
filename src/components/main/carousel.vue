@@ -2,10 +2,10 @@
   export default {
 
     name: 'carousel',
-    
 
     data() {
       return {
+        // slides carasoul images
         slides: [
           {
             src: "/src/assets/slider-autocar-5.jpg",

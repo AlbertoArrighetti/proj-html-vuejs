@@ -4,6 +4,8 @@ export default {
 
     data() {
         return {
+
+            // all the categories showed
             categories: [
                 'Keywords',
                 'Locations',

@@ -21,9 +21,16 @@ export default {
         <div class="info"> <i class="fa-solid fa-phone-volume"></i> {{ store.telephoneNumber }}</div>
         <div class="info"> <i class="fa-regular fa-envelope"></i> {{ store.companyEmail }}</div>
         <div class="socials">
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
+            <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            
         </div>
     </div>
 </template>
@@ -56,6 +63,31 @@ export default {
         justify-content: center;
         gap: 40px;
         font-size: 1.6em;
-    }
+        
+        a {
+            text-decoration: none;
+            color: $textColor;
+
+            i {
+                transition: .3s linear;
+            }
+
+            &:hover .fa-facebook-f {
+                color: #0863f7;
+                transform: scale(1.3);
+            }
+            &:hover .fa-instagram {
+                background-image: linear-gradient(45deg, #e6437a, #8848d4);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                transform: scale(1.3);
+            }
+            &:hover .fa-twitter {
+                color: #1da1f2;
+                transform: scale(1.3);
+            }
+            
+        }
+    }   
 }
 </style>

@@ -15,6 +15,7 @@ export default {
         return {
             store,
 
+            // link list navbar
             links: [
                 'Home',
                 'About Us',
@@ -22,7 +23,7 @@ export default {
                 'Dealers',
                 'Packages',
                 'Blog',
-                'Contact'
+                'Contact',
             ],
         }
     },
@@ -77,14 +78,17 @@ export default {
         .links {
             display: flex;
             gap: 18px;
-
+            margin-right: 14px;
             a {
                 color: $primaryColor;
                 text-decoration: none;
                 font-weight: bold;
-                
-                &:last-of-type {
-                    padding-right: 8px;
+                padding: 7px 0;
+                font-size: .9em;
+
+                &:hover {
+                    border-bottom: 2px solid $primaryColor;
+                    padding-bottom: calc(7px - 2px);
                 }
             }
         }
@@ -92,6 +96,7 @@ export default {
         .fa-bars-staggered {
             font-size: 2em;
             margin: 0 26px;
+            cursor: pointer;
         }
     }
 

@@ -1,14 +1,14 @@
 import { reactive } from "vue";
 
 export const store = reactive({
+    
+    // company details 
             telephoneNumber: '+1 (234) 567 89 10',
             companyEmail: 'example@example.com',
             companyPosition: 'New Jersey, USA',
-
-
+    // user details
             userEmail: '',
-
-    
+    // car list
             cars: [
                 {
                     img: '/src/assets/bmw-8-series-convertible-technical-data-sp-desktop-400x300.jpg',
@@ -84,6 +84,7 @@ export const store = reactive({
                 },
             ],
 
+        //car categories
             carType: [
                 {
                     src: 'cabrio',
@@ -117,7 +118,7 @@ export const store = reactive({
                 },
             ],
 
-
+        // reviews 
             customersReview: [
                 {
                     picture: '/src/assets/man1.png',
@@ -141,6 +142,7 @@ export const store = reactive({
                 },
             ],
 
+        // company articles
             resentArticlesInfos: [
                 {
                     img: '/src/assets/news-autocar-1-300x180.jpg',
@@ -168,6 +170,7 @@ export const store = reactive({
                 },
             ],
 
+        // link list footer
             footerLinks: [
                 {
                     title: 'My Account',

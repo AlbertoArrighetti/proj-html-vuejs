@@ -69,6 +69,13 @@ export default {
             position: absolute;
             right: 0;
             color: #aaaaaa;
+            cursor: pointer;
+
+            transition: .3s linear;
+            &:hover {
+                color: #B31312;
+                transform: scale(1.3);
+            }
         }
     }
 }

@@ -23,7 +23,9 @@ export default {
         </li>
 
         <li class="link" v-for="currentLink in linkList.links">
-            - {{ currentLink }}
+            <a href="#">
+                - {{ currentLink }}
+            </a>
         </li>
     </ul>
 </template>
@@ -40,6 +42,12 @@ export default {
     }
     .link {
         margin-bottom: 10px;
+
+        a {
+            text-decoration: none;
+            color: $textColor;
+            font-size: .9em;
+        }
     }
 }
 </style>
