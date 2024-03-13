@@ -1,6 +1,13 @@
 import { reactive } from "vue";
 
 export const store = reactive({
+            telephoneNumber: '+1 (234) 567 89 10',
+            companyEmail: 'example@example.com',
+            companyPosition: 'New Jersey, USA',
+
+
+            userEmail: '',
+
     
             cars: [
                 {

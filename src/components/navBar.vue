@@ -24,8 +24,6 @@ export default {
                 'Blog',
                 'Contact'
             ],
-
-            telephoneNumber: '+1 (234) 567 89 10'
         }
     },
 }
@@ -50,7 +48,7 @@ export default {
     
                 <i class="fa-solid fa-bars-staggered fa-rotate-180"></i>
     
-                <btnItem :content="telephoneNumber" :img="'/public/img/headphones.png'"></btnItem>
+                <btnItem :content="store.telephoneNumber" :img="'/public/img/headphones.png'"></btnItem>
             </div>
 
         </div>
