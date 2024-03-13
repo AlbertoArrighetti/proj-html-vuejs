@@ -63,7 +63,7 @@ export default {
     width: 100%;
     height: 860px;
     margin-bottom: 60px;
-    color: #ffffff;
+    color: $textColor;
     text-align: center;
 
     .icon{

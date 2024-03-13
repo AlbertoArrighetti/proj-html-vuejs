@@ -101,7 +101,7 @@
             @include posAbsoluteCenter;
             @include flexCenter;
             
-            color: #ffffff;
+            color: $textColor;
             cursor: pointer;
             &.prev-arrow {
                 left: 70px;
@@ -122,7 +122,7 @@
             object-fit: cover;
         }
         .text {
-            color: #ffffff;
+            color: $textColor;
             position: absolute;
             top: 40%;
             left: 15%;

@@ -63,7 +63,7 @@ export default {
             background-color: $primaryColor;
             border-radius: 50%;
             @include flexCenter;
-            color: #ffffff;
+            color: $textColor;
             margin-bottom: 20px;
 
             .fa-thumbs-up {

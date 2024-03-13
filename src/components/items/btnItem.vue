@@ -27,7 +27,7 @@ export default {
     border-radius: 6px;
     cursor: pointer;
 
-    border: 0 black;
+    border: 0 $primaryColor;
 
     img {
         max-width: 40px;

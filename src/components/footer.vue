@@ -43,7 +43,7 @@ export default {
 
 footer {
     background-color: $primaryColor;
-    color: #ffffff;
+    color: $textColor;
 
     .container {
         display: flex;

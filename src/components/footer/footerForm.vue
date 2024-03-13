@@ -45,11 +45,14 @@ export default {
             padding: 24px;
             border-radius: 6px;
             width: 100%;
-            background-color: #ffffff;
+            background-color: $textColor;
 
             .btnText {
                 opacity: 0.6;
             }
+        }
+        button {
+            cursor: pointer;
         }
     }
 }
