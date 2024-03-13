@@ -4,6 +4,7 @@ import {store} from '../store.js';
 // components
 import footerInfos from './footer/footerInfos.vue';
 import footerForm from './footer/footerForm.vue';
+import footerLinks from './footer/footerLinks.vue';
 
 export default {
     name: 'footerContent',
@@ -16,6 +17,7 @@ export default {
     components: {
         footerInfos,
         footerForm,
+        footerLinks,
     },
 }
 
@@ -26,6 +28,11 @@ export default {
     <div class="container">
         <footerInfos></footerInfos>
         <footerForm></footerForm>
+        <footerLinks></footerLinks>
+    </div>
+    <div class="copyright">
+        <i class="fa-regular fa-copyright"></i>
+        2022 Autocar - All Rights Reserved
     </div>
 </footer>
 </template>
@@ -40,8 +47,12 @@ footer {
 
     .container {
         display: flex;
-        padding: 40px 0;
-        gap: 100px;
+        padding: 60px 0 50px;
+        gap: 170px;
+    }
+    .copyright {
+        text-align: center;
+        padding-bottom: 50px;
     }
 }
 </style>

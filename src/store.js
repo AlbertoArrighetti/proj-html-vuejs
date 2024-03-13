@@ -166,6 +166,17 @@ export const store = reactive({
                     desc: 'You will have a quiter vehicle that burns less than [...]',
                     title: 'Is the Auris diesel?',
                 },
-            ]
+            ],
+
+            footerLinks: [
+                {
+                    title: 'My Account',
+                    links: ['My account', 'Checkout', 'Cart', 'Packages', 'Add Car'],
+                },
+                {
+                    title: 'Quick Links',
+                    links: ['Home', 'About Us', 'Blog', 'Contact', 'Refund & Returns'],
+                },
+            ],
         
 })

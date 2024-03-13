@@ -17,7 +17,6 @@ export default {
     <h4>Join Our Newsletter</h4>
     <p>Subscribe to be informed about our services and products</p>
 
-
     <div class="form">
         <input type="mail" placeholder="Your Email Address" v-model="store.userEmail">
         <button>
@@ -54,5 +53,4 @@ export default {
         }
     }
 }
-
 </style>

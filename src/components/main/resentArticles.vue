@@ -50,11 +50,12 @@ export default {
 @use '/src/styles/mixin.scss' as *;
 
 #resentArticles {
+    margin-bottom: 100px;
+    
     .container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 20px;
 
         .icon {
             width: 100px;
